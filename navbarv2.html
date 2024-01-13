@@ -1,0 +1,46 @@
+<!-- navbar.html -->
+<style>
+    .navbar {
+        padding-left: 20px; /* Adjust the padding value as needed */
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        color: #00D6E3 !important;
+    }
+    .mainpage {
+        font-family: 'EB Garamond', serif !important;
+    }
+</style>
+<nav class="navbar navbar-expand-lg navbar-dark bg-black pl-13"> <!-- Updated classes -->
+    <!-- Add your logo image here -->
+    <a class="navbar-brand " href="index.html">
+        <img src="logo.jpg" alt="Your Logo" width="200" class="d-inline-block align-top">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <!-- Category 1 Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="category1Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Category 1
+                </a>
+                <div class="dropdown-menu" aria-labelledby="category1Dropdown">
+                    <a class="dropdown-item" href="page1.html">GSOC: Phone Log Form</a>
+                    <a class="dropdown-item" href="page2.html">News UK: Trip Intake Form</a>
+                </div>
+            </li>
+
+            <!-- Category 2 Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="category2Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Category 2
+                </a>
+                <div class="dropdown-menu" aria-labelledby="category2Dropdown">
+                    <a class="dropdown-item" href="page3.html">GSOC: Intel Metrics Form</a>
+                    <!-- Add more items as needed -->
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
