@@ -17,6 +17,18 @@
             height: 100vh; /* Set the sidebar height to 100% of the viewport height */
             position: sticky;
             top: 0;
+            min-width: 500px; /* Adjust the value as per your design */
+
+        }
+
+        #footerbb {
+            background-color: black; /* Background color */
+            color: white; /* Text color */
+            height: 100vh; /* Set the sidebar height to 100% of the viewport height */
+            position: sticky;
+            top: 0;
+            min-width: 500px; /* Adjust the value as per your design */
+
         }
 
         #sidebar ul.nav.flex-column {
@@ -34,6 +46,9 @@
             background: #000; /* Background color */
             color: white !important; /* Text color */
         }
+        @media screen and (max-width: 3000px) {
+
+}
     </style>
 </head>
 <body>
@@ -61,38 +76,61 @@
         </div>
     </nav>
 
-    <div class="container-fluid">
-        <div class="row">
+   
             <!-- Sidebar (on the left) -->
-            <nav id="sidebar" class="col-md-3 col-lg-1 d-md-block sidebar">
-                <div class="position-sticky">
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="page4.html">
-                                DataHub - Dashboard
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                Link 2
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                Link 3
-                            </a>
-                        </li>
-                        <!-- Add more links as needed -->
-                    </ul>
-                </div>
+           <!-- Sidebar (on the left) -->
+<!-- Sidebar (on the left) -->
+<div class="container-fluid">
+    <div class="row">
+        <!-- Black column to wrap the sidebar -->
+        <div class="col-12 col-md-4 col-lg-3 sidebar" style="background-color: black; color: white; overflow-y: auto;">
+            <!-- Sidebar content -->
+            <nav id="sidebar" class="position-sticky d-flex flex-column" style="height: 100%; min-width: 500px;">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="page4.html">
+                            DataHub Embedded Dash
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://docs.google.com/spreadsheets/d/13lyyUAzWv-A19vxsyx-IooVMdlW4oqR1Jz3mSUOh7ig/edit?usp=sharing">
+                            Daily High Risk Check-in Sheets
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://docs.google.com/spreadsheets/d/1szW9dkl5YuBmwLu2U21dl-GTlbVVepuDX58WWhsvMDA/edit?usp=sharing">
+                            UKR NC Personnel
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://docs.google.com/spreadsheets/d/1u8ybGZnVho6Q_C1a7tSNJUaKTn9gRTbK5PnZfABWV1o/edit#gid=1687500248">
+                            WSJ Op Order
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://docs.google.com/spreadsheets/d/1fUKN-duu2alxozyCUNMCS6Xoqtcl9qASSQ5EkhXZ9aQ/edit#gid=373092647">
+                            Check-Ins Action List
+                        </a>
+                    </li>
+                    <!-- Add more links as needed -->
+                </ul>
+                <!-- Add a div block to push content down -->
+                <div style="flex-grow: 1;"></div>
+                <!-- Moved the footer inside the sidebar and made it sticky at the bottom -->
+          
             </nav>
+        </div>
+
+
+
+
 
             <!-- Main Content (on the right) -->
-            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-                <div class="mainmain mt-4">
+            <main class="col-12 col-md-8 col-lg-9 px-md-4">
+                <div class="mt-4" style="vh: 100px;">
                     <h1>Welcome to the GSOC Tool Suite Page! 🚀</h1>
                     <p>This webpage serves as a central repository for accessing the tools and resources you need for the GSOC. You'll find everything you need right here.</p>
-
+                    
                     <h2>Explore Our Tools</h2>
                     <p>Discover a variety of tools and forms that streamline your GSOC experience:</p>
                     <ul>
@@ -100,15 +138,15 @@
                         <li>✈️<a href="page2.html">News UK: Trip Intake Form</a></li>
                         <li>🌏<a href="page3.html">GSOC: Intel Metrics Form</a></li>
                     </ul>
-
-                    <p>If you have any questions or need assistance, please don't hesitate to reach out to the team. We're here to support you!</p>
-                </div>
-            </main>
+                    
+                    <p>If you have any questions or need assistance, please don't hesitate to reach out to the team. We're here to support you!</p></div>
+                    <div style="display: flex; flex-direction: column; justify-content: flex-end; min-height: 100vh; ">
+                        <footer class="footerbb text-center py-3" style="position: sticky; bottom: 0;">
+                            <p>&copy; 2024 NewsCorp GSOC Tools Suite</p>
+                        </footer>    </div>            </main>
         </div>
     </div>
 
-    <footer class="bg-black text-white text-center py-3">
-        <p>&copy; 2024 NewsCorp GSOC Tools Suite</p>
-    </footer>
+
 </body>
 </html>
