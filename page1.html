@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page 1 - My Website</title>
+    <title>📱 GSOC: Phone Log Form</title>
 
     <!-- Include Bootstrap CSS (if you're using Bootstrap) -->
     <!-- Add the link to your Bootstrap CSS file here -->
@@ -12,12 +12,21 @@
 <body>
 
 <!-- Include the shared navbar (assuming you've followed the previous instructions) -->
+<div class="mainpage">
 <div id="navbarContainer">
 <!-- navbar.html -->
 <style>
     .navbar {
         padding-left: 20px; /* Adjust the padding value as needed */
     }
+    .navbar-dark .navbar-nav .nav-link {
+        color: #00D6E3 !important;
+    }
+    .mainpage {
+        font-family: 'EB Garamond', serif !important;
+    }
+    
+
 </style>
 <nav class="navbar navbar-expand-lg navbar-dark bg-black pl-13"> <!-- Updated classes -->
     <!-- Add your logo image here -->
@@ -29,9 +38,6 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home</a>
-            </li>
             <li class="nav-item">
                 <a class="nav-link" href="page1.html">GSOC: Phone Log Form</a>
             </li>
@@ -62,7 +68,9 @@
 
 <!-- Include Bootstrap JavaScript (if you're using Bootstrap) -->
 <!-- Add the script link to your Bootstrap JavaScript file here -->
-<script src="./js/bootstrap.min.js"></script>
-
+<footer class="bg-black text-white text-center py-3 fixed-bottom">
+    <p>&copy; 2024 NewsCorp GSOC Tools Suite</p>
+</footer>
+</div>
 </body>
 </html>

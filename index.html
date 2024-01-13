@@ -4,8 +4,9 @@
     <!-- Add this in the <head> section of your HTML file -->
 <link rel="stylesheet" href="./css/bootstrap.min.css">
 <script src="./js/bootstrap.min.js"></script>
-    <title>NewsCorp GSOC Tools Suite</title>
+    <title>🌐 NewsCorp GSOC Tools Suite</title>
 </head>
+<!-- navbar.html -->
 <!-- navbar.html -->
 <!-- navbar.html -->
 <!-- navbar.html -->
@@ -13,46 +14,55 @@
     .navbar {
         padding-left: 20px; /* Adjust the padding value as needed */
     }
+    .navbar-dark .navbar-nav .nav-link {
+        color: #00D6E3 !important;
+    }
+    .mainpage {
+        font-family: 'EB Garamond', serif !important;
+    }
+    
+
 </style>
-<nav class="navbar navbar-expand-lg navbar-dark bg-black pl-13"> <!-- Updated classes -->
-    <!-- Add your logo image here -->
-    <a class="navbar-brand " href="index.html">
-        <img src="logo.jpg" alt="Your Logo" width="200" class="d-inline-block align-top">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="page1.html">GSOC: Phone Log Form</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="page2.html">News UK: Trip Intake Form</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="page3.html">GSOC: Intel Metrics Form</a>
-            </li>
+<div class="mainpage">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black pl-13"> <!-- Updated classes -->
+        <!-- Add your logo image here -->
+        <a class="navbar-brand " href="index.html">
+            <img src="logo.jpg" alt="Your Logo" width="200" class="d-inline-block align-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="page1.html">GSOC: Phone Log Form</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page2.html">News UK: Trip Intake Form</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page3.html">GSOC: Intel Metrics Form</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <h1>Welcome to the GSOC Tool Suite Page! 🚀</h1>
+        <p>This webpage serves as a central repository for accessing the tools and resources you need for the GSOC. You'll find everything you need right here.</p>
+
+        <h2>Explore Our Tools</h2>
+        <p>Discover a variety of tools and forms that streamline your GSOC experience:</p>
+        <ul>
+            <li>📱<a href="page1.html">GSOC: Phone Log Form</a></li>
+            <li>✈️<a href="page2.html">News UK: Trip Intake Form</a></li>
+            <li>🌏<a href="page3.html">GSOC: Intel Metrics Form</a></li>
         </ul>
+
+        <p>If you have any questions or need assistance, please don't hesitate to reach out to the team. We're here to support you!</p>
     </div>
-</nav>
-
-<div class="container mt-4">
-    <h1>Welcome to GSOC:ToolHub</h1>
-    <p>This webpage serves as a central repository for accessing the tools and resources you need for GSOC (Google Summer of Code). Whether you're a mentor or a student, you'll find everything you need right here.</p>
-
-    <h2>Explore Our Tools</h2>
-    <p>Discover a variety of tools and forms that streamline your GSOC experience:</p>
-    <ul>
-        <li><a href="page1.html">GSOC: Phone Log Form</a></li>
-        <li><a href="page2.html">News UK: Trip Intake Form</a></li>
-        <li><a href="page3.html">GSOC: Intel Metrics Form</a></li>
-    </ul>
-
-    <p>If you have any questions or need assistance, please don't hesitate to contact us. We're here to support you!</p>
+    <footer class="bg-black text-white text-center py-3 fixed-bottom">
+        <p>&copy; 2024 NewsCorp GSOC Tools Suite</p>
+    </footer>
 </div>
 
 
